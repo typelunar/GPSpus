@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_chat">
+
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:id="@+id/list_view">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_white_frame"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="输入"
+            android:textSize="15sp"
+            android:id="@+id/edit_message"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:text="发送"
+            android:textSize="18sp"
+            android:textColor="@color/listbgc"
+            android:background="@drawable/bg_send_btn"
+            android:id="@+id/send_btn"/>
+    </LinearLayout>
+
+</RelativeLayout>
